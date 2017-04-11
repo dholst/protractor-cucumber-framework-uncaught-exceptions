@@ -1,0 +1,17 @@
+{
+  "name": "protractor-cucumber-framework-uncaught-exceptions",
+  "version": "1.0.0",
+  "scripts": {
+    "webdriver": "webdriver-manager update --standalone --versions.standalone=2.53.1 && webdriver-manager start --versions.standalone=2.53.1",
+    "start": "node testapp/server",
+    "test": "protractor"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "cucumber": "1.3.2",
+    "express": "^4.15.2",
+    "protractor": "4.0.9",
+    "protractor-cucumber-framework": "3.0.0"
+  }
+}

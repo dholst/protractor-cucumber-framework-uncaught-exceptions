@@ -2,10 +2,10 @@ module.exports.config = {
   framework: 'custom',
   frameworkPath: 'node_modules/protractor-cucumber-framework',
   baseUrl: 'http://localhost:8881',
-
+  ignoreUncaughtExceptions: true,
 
   cucumberOpts: {
-    require: ['features/support/**/*.js', 'features/step-definitions/**/*.js'],
+    require: ['features/step-definitions/**/*.js'],
     strict: true
   },
 

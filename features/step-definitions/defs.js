@@ -1,6 +1,6 @@
 module.exports = function() {
-  this.Given(/something throws an uncaught exception/, function() {
+  this.Given(/something throws an uncaught exception/, function(done) {
     browser.get('/index.html');
-    return expect(element(by.css('[nuthin]')).getText()).to.eventually.eql('anything');
+    element(by.css('[nuthin]')).getText().then(done);
   });
 };
